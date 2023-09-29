@@ -1,0 +1,30 @@
+{
+  "name": "test-cloudinary",
+  "version": "1.0.0",
+  "description": "Upload feature Test with Cloudinary",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwachee/Test-cloudinary.git"
+  },
+  "type": "module",
+  "author": "nwachee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwachee/Test-cloudinary/issues"
+  },
+  "homepage": "https://github.com/nwachee/Test-cloudinary#readme",
+  "dependencies": {
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3",
+    "morgan": "^1.10.0"
+  }
+}
