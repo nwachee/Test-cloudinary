@@ -1,6 +1,7 @@
-import fileModel from '../models/file.model';
+import fileModel from '../models/file.model.js';
 
-export const fileService = async (fileData) => {
-        return await fileModel.create(fileData)
-    }
+export const fileService = async (input) => {return await fileModel.create(input)}
 
+export const fetchLinks = async (input) => {return await fileModel.find(input)}
+
+export const  deleteLink = async(id) => {return await fileModel.findByIdAndDelete(id) }
