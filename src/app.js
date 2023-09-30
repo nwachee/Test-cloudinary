@@ -4,11 +4,13 @@ import connectDb from './DB/connect.js';
 import rootRoute from './routes/index.route.js';
 import logger from 'morgan';
 import cors from 'cors';
+import formData from 'express-form-data';
 
 const app = express();
 const PORT = process.env.PORT || 5000
 
 app.use(logger('dev'));
+app.use(formData.parse());
 app.use(
 	cors({
 	  origin: '*',
